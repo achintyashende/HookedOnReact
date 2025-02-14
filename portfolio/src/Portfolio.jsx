@@ -8,6 +8,11 @@ import ExperienceCard from './components/ExperienceCard';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
+// project images
+import kursefy from '../src/assets/kursefy.png';
+import greenToken from '../src/assets/greenToken.png';
+import realtimeWhiteboard from '../src/assets/realtimeWhiteboard.png';
+
 const Portfolio = () => {
 
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -19,7 +24,7 @@ const Portfolio = () => {
 
     // Data
     const skills = [
-        "C++", "JavaScript", "React", "Node.js",
+        "C++", "HTML", "CSS", "JavaScript", "React", "Node.js",
         "Express.js", "MongoDB", "SQL", "Tailwind CSS",
         "Bootstrap", "Git", "Data Structures", "Algorithms", "Problem-Solving"
     ];
@@ -29,19 +34,22 @@ const Portfolio = () => {
             title: "Kursefy - Online Learning Platform",
             description: "A responsive online learning platform with features like course enrolment, video playback, and progress tracking. Built with React.js and Tailwind CSS, with a secure backend using Node.js and MongoDB.",
             tags: ["React.js", "Node.js", "MongoDB", "Tailwind CSS", "Express.js", "Cloudinary"],
-            link: "github.com/achintyashende/kursefy"
+            link: "github.com/achintyashende/kursefy",
+            image: kursefy
         },
         {
             title: "Real-Time Whiteboard Sharing Application",
             description: "A real-time collaborative whiteboard application using WebSockets for seamless synchronization. Features an intuitive user interface built with React.js focusing on scalability and responsiveness.",
             tags: ["React.js", "WebSockets", "Node.js", "Bootstrap CSS"],
-            link: "realtime-whiteboard-sharing-forntend.onrender.com"
+            link: "realtime-whiteboard-sharing-forntend.onrender.com",
+            image: realtimeWhiteboard
         },
         {
             title: "Green Tokens",
             description: "A decentralized blockchain-based application ensuring secure, transparent, and tamper-proof transactions. Implements smart contracts for automation and efficiency in data integrity and trustless interactions.",
             tags: ["React.js", "Solidity", "Node.js", "Tailwind CSS", "Bitfinity"],
-            link: "github.com/achintyashende/Energy-Trading-Blockchain"
+            link: "github.com/achintyashende/Energy-Trading-Blockchain",
+            image: greenToken
         }
     ];
 
@@ -62,7 +70,7 @@ const Portfolio = () => {
     ];
 
     return (
-        <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
+        <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-slate-200 text-gray-900'}`}>
             {/* header section  */}
             <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
@@ -70,7 +78,7 @@ const Portfolio = () => {
             <Hero isVisible={isVisible} isDarkMode={isDarkMode} />
 
             {/* Tech Stack */}
-            <section className="py-12 px-8">
+            <section className={`py-12 px-8 ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-slate-300 text-gray-900'}`}>
                 <div className="max-w-full mx-auto">
                     <h2 className="text-3xl font-bold mb-8 text-center hover:text-blue-500 transition-colors duration-300">
                         Tech Stack
@@ -81,9 +89,11 @@ const Portfolio = () => {
 
             <SkillsSection skills={skills} isDarkMode={isDarkMode} />
             
+            {/* <ProjectsSection projects={projects} isDarkMode={isDarkMode} /> */}
+
             <ProjectsSection projects={projects} isDarkMode={isDarkMode} />
 
-            <section className="py-12 px-4">
+            <section className={`py-12 px-4 ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-slate-300 text-gray-900'}`}>
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl font-bold mb-8 text-center hover:text-blue-500 transition-colors duration-300">
                         Experience

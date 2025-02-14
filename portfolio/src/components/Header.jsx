@@ -4,8 +4,8 @@ import { Download, Moon, Sun } from 'lucide-react';
 const Header = ({ isDarkMode, setIsDarkMode }) => {
     return (
         <header className="fixed top-0 w-full bg-opacity-90 backdrop-blur-sm z-10">
-            <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-                <h1 className="text-xl font-bold hover:text-blue-700 transition-colors duration-300">
+            <nav className="max-w-full mx-auto px-8 py-4 flex justify-between items-center">
+                <h1 className="text-2xl font-bold hover:text-blue-700 transition-colors duration-300">
                     Achintya Shende
                 </h1>
                 <div className="flex items-center gap-4">

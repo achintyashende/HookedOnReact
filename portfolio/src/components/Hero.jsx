@@ -9,17 +9,17 @@ const Hero = ({ isVisible, isDarkMode}) => {
                 }`}>
                 <div className="flex flex-col items-center text-center">
                     
-                    <div className="w-36 h-36 rounded-full border bg-gradient-to-r from-blue-500 to-purple-500 mb-6 hover:scale-110 transition-transform duration-300">
-                        <img src={myProfile} alt="Profile" className="w-32 h-32 rounded-full m-2 " />
+                    <div className="rounded-full border bg-gradient-to-r from-blue-500 to-slate-800 mb-6 hover:scale-110 transition-transform duration-300">
+                        <img src={myProfile} alt="Profile" className="w-40 h-40 rounded-full m-2 " />
                     </div>
                     
                     <h1 className="text-4xl font-bold mb-4 hover:text-blue-700 transition-colors duration-300">
                         Achintya Shende
                     </h1>
-                    <h2 className={` text-2xl mb-6 text-blue-500 ${isDarkMode ? 'text-sky-400' : 'text-sky-600'}`}>
-                        Full Stack Developer
+                    <h2 className={` text-2xl mb-6 ${isDarkMode ? 'text-blue-500' : 'text-sky-700'}`}>
+                        Full Stack Developer | MERN Stack Enthusiast | Problem Solver
                     </h2>
-                    <p className="max-w-2xl text-lg mb-8">
+                    <p className="max-w-5xl text-lg mb-8">
                         Analytical and driven software developer with hands-on experience in full-stack development.
                         Proficient in C++, React, and problem-solving, I aim to leverage my technical expertise,
                         innovative mindset, and quick learning ability to contribute to impactful, data-driven projects

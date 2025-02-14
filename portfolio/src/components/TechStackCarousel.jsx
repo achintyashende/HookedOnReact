@@ -9,12 +9,15 @@ const TechStackCarousel = () => {
         { name: "MongoDB", icon: "mongodb" },
         // { name: "Express", icon: "express" },
         { name: "JavaScript", icon: "js" },
+        { name: "TypeScript", icon: "typescript" },
         { name: "HTML", icon: "html5" },
         { name: "C++", icon: "c++" },
         { name: "Git", icon: "git" },
         { name: "GitHub", icon: "github" },
+        { name: "VsCode", icon: "vscode" },
         { name: "Tailwind", icon: "tailwindcss" },
-        { name: "Bootstrap", icon: "bootstrap4" }
+        { name: "Bootstrap", icon: "bootstrap4" },
+        { name: "Redux", icon: "redux" }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,7 +35,7 @@ const TechStackCarousel = () => {
     );
 
     return (
-        <div className="flex justify-center items-center gap-14 py-8 overflow-hidden">
+        <div className="flex justify-center items-center gap-14 py-8 overflow-hidden ">
             {visibleTech.map((tech, index) => (
                 <div
                     key={tech.name + index}
