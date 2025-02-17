@@ -55,6 +55,12 @@ const Portfolio = () => {
 
     const experience = [
         {
+            role: "Lead at Indian Society of Technical Education",
+            company: "ISTE (Indian Society of Technical Education)",
+            period: "March 2022 - Dec 2024",
+            description: "Led multiple initiatives and competitions, fostering collaboration and innovation within the institute."
+        },
+        {
             role: "Full-Stack Development Intern",
             company: "ZasmLabs",
             period: "Dec 2024 - Present",
