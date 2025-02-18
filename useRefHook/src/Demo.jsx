@@ -5,7 +5,7 @@ export default function Demo() {
     const countRef = useRef(0);
 
     const handleIncrement = () => {
-        // setCount(count + 1);
+        setCount(count + 1);
         countRef.current++;
 
         console.log("State:", count);
