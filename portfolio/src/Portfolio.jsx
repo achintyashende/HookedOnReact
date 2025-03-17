@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 // project images
 import kursefy from '../src/assets/kursefy.png';
-import kursefy from '../src/assets/geekleet.png';
+import geekleet from '../src/assets/geekleet.png';
 import greenToken from '../src/assets/greenToken.png';
 import realtimeWhiteboard from '../src/assets/realtimeWhiteboard.png';
 
