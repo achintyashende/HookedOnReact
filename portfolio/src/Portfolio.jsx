@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 
 // project images
 import kursefy from '../src/assets/kursefy.png';
+import kursefy from '../src/assets/geekleet.png';
 import greenToken from '../src/assets/greenToken.png';
 import realtimeWhiteboard from '../src/assets/realtimeWhiteboard.png';
 
@@ -30,6 +31,13 @@ const Portfolio = () => {
     ];
 
     const projects = [
+        {
+            title: "GeekLeet - Coding Profile Tracker",
+            description: "A web application to track coding profiles from LeetCode and GeeksForGeeks. Users can view their problem-solving statistics and progress in a single dashboard. Built with React.js and Tailwind CSS on the frontend, with Node.js and Express.js powering the backend.",
+            tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Framer Motion"],
+            link: "https://geekleet.vercel.app/",
+            image: geekleet
+        },
         {
             title: "Kursefy - Online Learning Platform",
             description: "A responsive online learning platform with features like course enrolment, video playback, and progress tracking. Built with React.js and Tailwind CSS, with a secure backend using Node.js and MongoDB.",
